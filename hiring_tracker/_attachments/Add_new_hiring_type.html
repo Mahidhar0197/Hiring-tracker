@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<center>
+<head>
+    <script src="/_utils/script/sha1.js"></script>
+    <script src="/_utils/script/json2.js"></script>
+    <script src="/_utils/script/jquery.js"></script>
+    <script src="/_utils/script/jquery.couch.js"></script>
+    <script src="vendor/couchapp/md5.js"></script>
+    <script src="vendor/couchapp/jquery.couchForm.js"></script>
+    <script src="vendor/couchapp/jquery.mustache.js"></script>
+    <script src="vendor/couchapp/jquery.couchProfile.js"></script>
+    <script src="vendor/couchapp/jquery.couchLogin.js"></script>
+    <script src="vendor/couchapp/jquery.couch.app.js"></script>
+    <script src="vendor/couchapp/jquery.couch.app.util.js"></script>
+	<script src="hiring.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+
+<body style="background:green">
+
+<form id="update" action="home.html">
+
+<h style="color:yellow"><li>Hiring Ticket type:<br></li> </h>
+
+<select id="hiring_ticket_type">
+  <option value="hiring">--Hiring Ticket Type--</option>
+  <option value="Employee">Employee</option>
+  <option value="Contractor">Contractor</option>
+  <option value="Vendor">Vendor</option>
+  <option value="FTH">FTH</option>
+</select><br>
+
+<li>Hiring Ticket No:<br></li>
+<input type="text" id="hiring_ticket_no" placeholder="Enter ticket_no" ><br>
+<li>Number of positions<br></li>
+<input type="numeric" id="number" ><br>
+<div id="ec"></div>
+<li>Hiring Manager<br></li>
+<input type="text" id="hiring_manager" placeholder="Name of hiring manager"><br>
+<li>Cost Center<br></li>
+<input type="text" id="cost_center" placeholder="Name of cost_center"><br>
+<li>Role<br></li>
+<input type="text" id="role" placeholder="Enter role here"><br>
+<li>Band<br></li>
+<input type="text" id="band" placeholder="Enter Band here"><br>
+<li>Hiring Type<br></li>
+<select id="hiring_type">
+  <option value="External">External</option>
+  <option value="Internal">Internal</option>
+</select><br>
+<li>Position status<br></li>
+<select id="position_status">
+  <option value="Active">Active</option>
+  <option value="De-active">De-active</option>
+</select><br>
+<li>Segement<br></li>
+<input type="text" id="segment" placeholder="Segement"><br>
+<button type="button" id="add_record">Add Record</button>
+<input type="submit" id="submit" value="Submit">
+</form>
+
+</body>
+</center>
+</html>
+<!--
+
+Hiring Ticket type <Drop down><Employee, Contractor, Vendor, FTH>
+Hiring Ticket No <Free Txt & alpha numeric field>
+Number of positions <Free Numeric field>
+        Employee
+Hiring Ticket open date
+Hiring Ticket close date
+      Contractor, Vendor, FTH
+RR Number
+RR Open date
+RR Close date
+Hiring Manager
+Cost Center
+Role
+Band
+Hiring Type <External, Internal>
+Position status <Drop Down> (Active, De-active)
+Segment
+This should create Rows in DB as per the number of positions
+-->

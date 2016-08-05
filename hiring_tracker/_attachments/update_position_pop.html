@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<center>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="update_pop.js"></script>
+</head>
+
+<body>
+<form>
+ <li>Candidate First name:</li>
+  <input type="text" name="firstname" placeholder="Enter first name">
+  <br>
+ <li> Candidate Last name:</li>
+  <input type="text" name="lastname" placeholder="Enter first name"><br>
+  
+ <li>Source:<br></li>
+ <select name="Source">
+ <option value="HR">HR</option>
+ <option value="Internal">INTERNAL</option></select>
+ 
+ <li>Experience:</li>
+ <input type="numeric" name="Experience" placeholder="Enter your Experience"><br>
+ <li>Mobile#:</li>
+ 
+ <input type="numeric" name="Mobile#" placeholder="Enter your Mobile_no">
+ <li>Email ID:</li>
+ <input type="Email" placeholder="enter your Email"><br>
+ <li>SPOC Name:</li>
+ <input type="text" name="SPOC Name" placeholder=" Enter SPOC Name"><br>
+ <li>Product</li>
+ <input type="text" name="product" placeholder="Enter product"><br>
+ <li>Status region:</li>
+ <input type="text" name="Status region" placeholder="Enter Status region"><br>
+ <li>Resume Received date:</li>
+ <input type="date" name="em_open_date"><br>
+ <li>Duplicate Resume:</li>
+ <select name="Duplicate Resume">
+ <option value="Yes">Yes</option>
+ <option value="No">No</option><br>
+ </select>
+ <br>
+ <button id="ar" type='button' onclick="Add_record()">Add record</button>
+<div id="addrecord"></div>
+ <br><button>Sync with RDC</button>
+
+ </form>
+ 
+ </body>
+</center>
+
+</html>
+
+
